@@ -1,0 +1,155 @@
+.bordure{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 140px;
+    width: 80%;
+   height: 550px;
+   margin-bottom: 80px;
+   margin-left: 150px;
+   border-bottom: 2px black solid;
+   border-right: 2px black solid;
+   border-left: 2px rgb(146, 145, 145) solid;
+   border-top: 2px rgb(146, 145, 145) solid;
+   position: relative;
+}
+ .image img{
+    width: 300px;
+    height: 100%;
+} 
+.image{
+    width: 50%;
+}
+.formu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-right: 50px;
+    padding-left: 50px;
+     
+}
+.ligne{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+.ligne input{
+    width: 300px;
+    height: 35px;
+}
+.diff input{
+    width: 10px;
+    height: 35px;
+}
+label{ 
+    margin: 10px; 
+    font-size: 10px;
+    font-weight: bold;  
+}
+.bouton1 input{
+    background-color: rgb(37, 247, 114);
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(37, 247, 114);
+}
+.bouton2 input{
+    color: rgb(128, 123, 123);
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(37, 247, 114);
+}
+.bb{
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+}
+.range{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.diff{
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.moi input{
+    border-bottom-width: 1px;
+}
+
+
+  .progressbar-debut {
+    background-color: #d1d4d7;
+    width: 100%;
+    height: 3px;
+    position: relative;
+  }
+  .progressbar {
+    background-color: rgb(14, 172, 48);
+    height: 3px;
+    width: 50%;
+  }
+.barre{
+    margin-bottom: 40px;
+  }
+  .progressbar-debut .milieu{
+    background-color: rgb(14, 172, 48);
+    height: 30px;
+    width: 60px;
+    margin-left: 315px;
+    color: white;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -14px;
+    
+  }
+  #rouge input{
+    border-color: red;
+  }
+
+
+
+@media screen and (max-width:880px){
+    .bordure{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 1300px;
+        margin: auto;
+    }
+    .image{
+        order: 1;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .formu{
+        padding-right: 0;
+        text-align: center;
+        order: 2;
+        padding-left: 40px;
+    }
+    .ligne{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    
+    }
+    .image img{
+        padding-left: 50px;
+    }
+    .progressbar-debut{
+        width: 80%;
+    }
+    .progressbar-debut .milieu{
+        margin-left: 115px;
+    }
+    
+    
+}
